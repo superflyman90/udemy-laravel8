@@ -21,6 +21,6 @@ Route::any('/test', function () {
     return 'GET route';
 });
 
-Route::get('/article/{id}', function ($id) {
+Route::get('/article/{id}/comments/{author}', function ($id, $author) {
     return $id;
 });
