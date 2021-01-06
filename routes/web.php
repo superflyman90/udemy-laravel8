@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::any('/test', function () {
+    return 'GET route';
+});
+
+Route::get('/article/{id}', function ($id) {
+    return $id;
+});
