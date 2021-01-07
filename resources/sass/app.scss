@@ -6,4 +6,20 @@
 
 body {
     background: grey;
+    margin: 0;
+    padding: 0;
+}
+.utctime {
+    float: right;
+    .nav-item {
+        list-style-type: none;
+        a.time {
+            display: inline-block;
+            float: left;
+            font-weight: 400;
+            text-decoration: none;
+            color: #333;
+            padding: 0;
+        }
+    }
 }

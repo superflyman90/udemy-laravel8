@@ -16856,4 +16856,21 @@ readers do not read off random characters that represent icons */
 
 body {
   background: grey;
+  margin: 0;
+  padding: 0;
+}
+
+.utctime {
+  float: right;
+}
+.utctime .nav-item {
+  list-style-type: none;
+}
+.utctime .nav-item a.time {
+  display: inline-block;
+  float: left;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333;
+  padding: 0;
 }
