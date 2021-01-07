@@ -1,1 +1,2 @@
-require('./bootstrap');
+
+console.log('ca fonctionne');
