@@ -9,7 +9,8 @@
     <title>{{config('app.name')}}</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    @include('incs/navbar')
 
     @yield('content')
 
