@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::any('/test', function () {
-    return 'GET route';
-});
-
-Route::get('/article/{id}/comments/{author}', function ($id, $author) {
-    return $id;
-});
+Route::get('/', [MainController::class, 'home']);
